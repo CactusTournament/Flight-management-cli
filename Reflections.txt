@@ -1,0 +1,24 @@
+SPRINT REFLECTION — Flight Management System
+
+This sprint was a great opportunity to build a complete system from backend to frontend. I created two 
+separate Java applications: a Spring Boot REST API and a Java CLI client that communicates with the 
+API over HTTP. The project helped reinforce backend development, relational modeling, testing, and GitHub workflow.
+
+WHAT WENT WELL
+- Separating the API and CLI into two repos made the architecture clean and realistic.
+- The API came together smoothly with Spring Boot, and the relationships between cities, airports, passengers, and aircraft were straightforward to model.
+- The CLI was fun to build and made the project feel interactive.
+- Writing tests with JUnit and Mockito helped make the CLI more reliable.
+
+
+WHAT WAS CHALLENGING
+- Mocking the HTTP client for CLI tests took some time to get right.
+- Coordinating two separate projects (API + CLI) meant keeping track of two build systems and two sets of dependencies.
+
+WHAT I WOULD IMPROVE
+- Add more features to API, like searching or filtering.
+
+OVERALL
+This sprint tied together a lot of skills: API design, database modeling, Java development, 
+testing, and workflow. The final result is a clean, functional system with good test coverage and proper 
+documentation. It was a valuable learning experience and a satisfying project to complete.
