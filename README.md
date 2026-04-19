@@ -22,27 +22,51 @@ This CLI application answers four key sprint questions about flights, airports, 
 | 3 | What airports do aircraft use?             | `GET /aircraft/{id}/airports`   |
 | 4 | What airports have passengers used?        | `GET /passengers/{id}/airports` |
 
+
 ## Getting Started
 
 ### Prerequisites
-- API running at `http://localhost:8080`
+- API running at `http://localhost:8080` (or your deployed API endpoint)
+- Java 21 (or use Docker, see below)
 
-### Build & Run
+### Build & Run (Locally)
 
 ```bash
 mvn clean package
 java -jar target/flight-cli-1.0.0.jar
 ```
 
-## Testing
+### Run with Docker
 
--  JUnit 5 test suite
--  Mockito API mocking
--  Input validation & error handling
--  Output verification
--  GitHub Actions CI
+```bash
+# Build the Docker image
+docker build -t flight-cli .
+
+# Run the CLI (replace API URL if needed)
+docker run --rm -it flight-cli
+```
+
+
+## Testing & CI
+
+- JUnit 5 test suite
+- Mockito API mocking
+- Input validation & error handling
+- Output verification
+- GitHub Actions CI (runs on every PR and push to main)
 
 **Test Results:** 8 passed, 0 failures
+
+## Docker & CI/CD
+
+- Dockerfile included for containerized builds and runs
+- GitHub Actions workflows for build, test, and verification
+
+## Project Status
+
+- All required features implemented (CRUD, API integration, authentication, tests)
+- Dockerized and CI-enabled
+- Ready for deployment and demonstration
 
 ## Project Structure
 
